@@ -9,12 +9,14 @@ import {HomeComponent} from './home/home.component';
 import {AppRoutingModule} from './app-routing.module';
 import { LoginComponent } from './login/login.component';
 import {FormsModule} from '@angular/forms';
+import { TodayComponent } from './today/today.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    LoginComponent
+    LoginComponent,
+    TodayComponent
   ],
   imports: [
     BrowserModule,

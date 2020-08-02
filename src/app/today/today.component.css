@@ -1,0 +1,17 @@
+.time {
+  display: inline-block;
+  margin: 0;
+}
+
+.weather {
+  margin: 0;
+  font-size: 20px;
+}
+
+.forecast {
+  text-align: center;
+}
+
+.fdesc {
+  margin: 0;
+}

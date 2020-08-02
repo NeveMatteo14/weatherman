@@ -5,9 +5,9 @@
   <clr-main-container>
     <clr-header class="header header-5 header-shadow">
       <div class="branding">
-        <a href="#" class="nav-link">
+        <a class="nav-link" routerLink="/">
+          <clr-icon class="title" shape="sun" style="width: 25px; height: 25px; margin-bottom: 2px"></clr-icon>
           <span class="title" style="font-size: 20px">Weatherman</span>
-          <clr-icon class="title" shape="sun" style="width: 25px; height: 25px; margin-left: 5px"></clr-icon>
         </a>
       </div>
 
@@ -26,7 +26,7 @@
         [clrVerticalNavCollapsible]="true"
         [clr-nav-level]="1"
         class="nav-trigger--bottom">
-        <a clrVerticalNavLink>Today</a>
+        <a clrVerticalNavLink routerLink="/today" routerLinkActive="active">Today</a>
         <a clrVerticalNavLink>Hourly</a>
         <a clrVerticalNavLink>10 Day</a>
         <a clrVerticalNavLink>Weekend</a>
