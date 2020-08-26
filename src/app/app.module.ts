@@ -10,13 +10,18 @@ import {AppRoutingModule} from './app-routing.module';
 import { LoginComponent } from './login/login.component';
 import {FormsModule} from '@angular/forms';
 import { TodayComponent } from './today/today.component';
+import { HourlyComponent } from './hourly/hourly.component';
+import { TenDayComponent } from './ten-day/ten-day.component';
+import {HttpClientModule} from '@angular/common/http';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     LoginComponent,
-    TodayComponent
+    TodayComponent,
+    HourlyComponent,
+    TenDayComponent
   ],
   imports: [
     BrowserModule,
@@ -24,7 +29,8 @@ import { TodayComponent } from './today/today.component';
     BrowserAnimationsModule,
     RouterModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

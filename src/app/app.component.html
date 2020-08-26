@@ -12,6 +12,17 @@
       </div>
 
       <div class="header-actions">
+        <clr-dropdown>
+          <button class="nav-text" clrDropdownTrigger>
+            Location: Buffalo, NY
+            <clr-icon shape="caret down"></clr-icon>
+          </button>
+          <clr-dropdown-menu *clrIfOpen clrPosition="bottom-right">
+            <a clrDropdownItem>Buffalo, NY</a>
+            <a clrDropdownItem>Boston, MA</a>
+            <a clrDropdownItem>Los Angeles, CA</a>
+          </clr-dropdown-menu>
+        </clr-dropdown>
         <a href="#" class="nav-link nav-text" style="font-size: 17px">
           User
         </a>
@@ -27,10 +38,9 @@
         [clr-nav-level]="1"
         class="nav-trigger--bottom">
         <a clrVerticalNavLink routerLink="/today" routerLinkActive="active">Today</a>
-        <a clrVerticalNavLink>Hourly</a>
-        <a clrVerticalNavLink>10 Day</a>
-        <a clrVerticalNavLink>Weekend</a>
-        <a clrVerticalNavLink>Monthly</a>
+        <a clrVerticalNavLink routerLink="/hourly" routerLinkActive="active">Hourly</a>
+        <a clrVerticalNavLink routerLink="/ten-day" routerLinkActive="active">7 Day</a>
+        <a clrVerticalNavLink>Past 5 Days</a>
       </clr-vertical-nav>
       <div class="content-area home">
         <router-outlet></router-outlet>
